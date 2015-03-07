@@ -20,5 +20,7 @@
     <%= format_total_gross(@movie) %> 
   </p>
 </article>
-
-<%= link_to("All Movies", movies_path) %>
+<nav>
+  <%= link_to "All Movies", movies_path %> | 
+  <%= link_to "Edit", edit_movie_path(@movie) %>
+</nav>
