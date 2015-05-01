@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :test, :development do
+  gem 'test-unit'
   gem 'minitest'
   gem 'rspec-rails', '2.13.1'
 end
