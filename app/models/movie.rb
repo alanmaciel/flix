@@ -10,4 +10,8 @@ class Movie < ActiveRecord::Base
   def self.hits
     released.where("total_gross >= ?", 300000000).order("total_gross desc")
   end
+
+  def self.flops
+    released.where("total_gross < ?", 50000000).order("created_at desc")
+  end
 end
