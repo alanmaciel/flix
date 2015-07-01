@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative '../spec_helper'
 
 describe "Adding a movie" do
   it "creates the movie and shows the movie's details" do
@@ -8,15 +8,19 @@ describe "Adding a movie" do
     click_link 'Add New Movie'
     
     expect(current_path).to eq(new_movie_path)
-    # Act
 
+    # Act
     fill_in "Title", with: "New Movie Title"
     fill_in "Description", with: "Superheroes saving the world form villains"
     fill_in "Rating", with: "PG-13"
     fill_in "Total gross", with: "75000000"
+    fill_in "Cast", with: "The award-winning cast"
+    fill_in "Director", with: "The ever-creative director"
+    fill_in "Duration", with: "123 min"
+    fill_in "Image file name", with: "movie.png"
     select (Time.now.year - 1).to_s, :from => "movie_released_on_1i"
-    # Assert
 
+    # Assert
     click_button 'Create Movie'
 
     expect(current_path).to eq(movie_path(Movie.last))

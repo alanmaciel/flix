@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative '../spec_helper'
 
 describe "Navigating movies" do
   it "Allows navigation from the detail page to the listing page" do

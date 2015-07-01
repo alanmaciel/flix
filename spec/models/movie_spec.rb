@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative '../spec_helper'
 
 describe "A movie" do
   it "is not a flop if the total gross is more than $50M" do
