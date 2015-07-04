@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467b9d35-3820-42f1-b211-ac5c734133ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/All_tests_in_spec__flix2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/All_tests_in_spec__flix.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/All_tests_in_spec__flix.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flix.iml" afterPath="$PROJECT_DIR$/.idea/flix.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flix.iws" />
@@ -870,7 +865,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435977492402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rubymine/idea project files.">
+      <created>1435977551158</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1435977551158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -941,7 +942,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Migrations revisited adding, cast, director, duration, image_file_name fields to movie model." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrations revisited adding, cast, director, duration, image_file_name fields to movie model." />
+    <MESSAGE value="Rubymine/idea project files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rubymine/idea project files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
