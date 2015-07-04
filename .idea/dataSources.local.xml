@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails flix: development" uuid="0ff8b451-a6b9-4bc8-931f-0480eeabd29e">
-      <first-sync>true</first-sync>
-    </data-source>
+    <data-source name="Rails flix: development" uuid="0ff8b451-a6b9-4bc8-931f-0480eeabd29e" />
     <data-source name="Rails flix: test" uuid="db84348f-4a78-40b0-a68f-4374d7fbb6d0">
       <first-sync>true</first-sync>
     </data-source>
