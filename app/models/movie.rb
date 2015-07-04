@@ -12,10 +12,11 @@ class Movie < ActiveRecord::Base
   end
 
   def self.flops
-    released.where("total_gross < ?", 50000000).order("total_gross asc")
+  released.where("total_gross < ?", 50000000).order("total_gross asc")
   end
 
   def self.recently_added
     order("created_at desc").limit(3)
   end
+
 end

@@ -3,7 +3,9 @@
 <% @movies.each do |movie| %>
   <article>
     <header>
+      <%= image_for movie %>
       <h2><%= link_to movie.title, movie %></h2>
+      <h3><%= movie.cast %></h3>
     </header>
     <p>
       <%= truncate(movie.description, length: 40, separator: ' ') %>
@@ -20,6 +22,10 @@
       <tr>
         <th>Total Gross:</th>
         <td><%= number_to_currency(movie.total_gross) %></td>
+      </tr>
+      <tr>
+        <th>Duration:</th>
+        <td><%= movie.duration %></td>
       </tr>
     </table>
   </article>
