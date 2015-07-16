@@ -50,11 +50,11 @@ describe "A movie" do
   end
 
   it "requires a released on date" do
-    movie = Movie.new(release_on_date: "")
+    movie = Movie.new(released_on: "")
 
     movie.valid?
 
-    expect(movie.errors[:release_on_date].any?).to eq(true)
+    expect(movie.errors[:released_on].any?).to eq(true)
   end
 
   it "requires a duration" do
@@ -78,7 +78,7 @@ describe "A movie" do
 
     movie.valid?
 
-    expect(movie.errors[:total_gross].any?).to eq(true)
+    expect(movie.errors[:total_gross].any?).to eq(false)
   end
 
   it "accepts a positive total gross" do
@@ -100,7 +100,7 @@ describe "A movie" do
   it "accepts properly formatted image file names" do
     file_names = %w[e.png movie.png movie.jpg movie.gif MOVIE.GIF]
     file_names.each do |file_name|
-      movie = Movie.new(image_file_name: filename)
+      movie = Movie.new(image_file_name: file_name)
       movie.valid?
       expect(movie.errors[:image_file_name].any?).to eq(false)
     end
@@ -109,7 +109,7 @@ describe "A movie" do
   it "rejects improperly formatted image file names" do
     file_names = %w[e.pdf .jpg .png .gif movie.txt movie.rtf movie.doc MOVIE.XLS]
     file_names.each do |file_name|
-      movie = Movie.new(image_file_name: filename)
+      movie = Movie.new(image_file_name: file_name)
       movie.valid?
       expect(movie.errors[:image_file_name].any?).to eq(true)
     end
@@ -121,12 +121,12 @@ describe "A movie" do
     ratings.each do |rating|
       movie = Movie.new(rating: rating)
       movie.valid?
-      expect(movie.errors[:rating].any?).to eq(true)
+      expect(movie.errors[:rating].any?).to eq(false)
     end
   end
 
   it "rejects any rating that is not in the approved list" do
-    ratings = %w[R-13 R-16 R NC-17]
+    ratings = %w[R-13 R-16 R-18 R-21]
 
     ratings.each do |rating|
       movie = Movie.new(rating: rating)
