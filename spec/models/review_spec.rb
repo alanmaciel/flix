@@ -11,7 +11,7 @@ describe 'A review' do
   end
 
   it "with  example attributes is valid" do
-    review = movie.reviews.new(review_attributes)
+    review = Review.new(review_attributes)
 
     expect(review.valid?).to eq(true)
   end
