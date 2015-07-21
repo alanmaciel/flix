@@ -11,7 +11,7 @@ describe "Creating a new review" do
     expect(current_path).to eq(new_movie_review_path(movie))
 
     fill_in "Name", with: "Alan Maciel"
-    select 3, :from => "review_stars"
+    choose "review_stars_3"
     fill_in "Comment", with: "My first review"
 
     click_button 'Post Review'
